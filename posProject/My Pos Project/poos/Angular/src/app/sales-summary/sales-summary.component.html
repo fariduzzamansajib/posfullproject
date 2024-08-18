@@ -1,0 +1,56 @@
+<div class="row" style="background-color: rgb(229, 235, 235);">
+
+
+    <div class="col-1">
+        <app-home></app-home>
+    </div>
+
+    <div class="col-10" style="margin-top: 50px;">
+        <div class="row">
+        <div class="col-3">
+            <!-- Sales By Date
+            <label for="">Date</label>
+            <input type="text"> -->
+        </div>
+
+
+
+        <div class="col-7" style="background-color: antiquewhite; border-radius: 10px; padding: 50px;">
+            <h2 style="text-align: center;">Sales Summary</h2>
+            <div class="row "*ngFor="let i of getallTransection" style="text-align: center; ">
+                <div class="col">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gross Sales</h5>
+                            <p class="card-text">TK.{{i.grossSales}}</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Discount</h5>
+                            <p class="card-text">TK.{{i.discount}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Net Sales</h5>
+                            <p class="card-text">TK.{{i.netSales}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+</div>
+
